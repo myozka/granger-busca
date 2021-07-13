@@ -56,6 +56,7 @@ class GrangeBuscaSimulator(object):
         t = self.t
         max_time = t + forward
         while t < max_time:
+            print (f"current t {t}")
             lambdas_t = self.total_intensity(t)
             sum_lambdas_t = lambdas_t.cumsum()
             if self.thinning:
